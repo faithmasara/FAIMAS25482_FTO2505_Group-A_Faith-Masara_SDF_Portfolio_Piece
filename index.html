@@ -1,3 +1,7 @@
+
+html
+Copy
+Edit
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +15,14 @@
   <div class="max-w-6xl mx-auto px-4 py-10 space-y-10">
 
     <!-- PROFILE -->
-    <section class="bg-white p-6 rounded-3xl shadow-lg flex flex-col md:flex-row items-center gap-6">
-      <img src="portfolio picture.jpeg" alt="Profile" class="w-32 h-32 rounded-lg object-cover"/>
-      <div>
-        <h1 class="text-3xl font-bold">Faith Masara</h1>
-        <p class="text-gray-600 mt-2 leading-relaxed">
+    <section class="bg-white p-6 rounded-3xl shadow-lg flex flex-col sm:flex-row items-center sm:items-start gap-6">
+      <!-- Image -->
+      <img src="portfolio picture.jpeg" alt="Profile" class="w-24 h-24 sm:w-32 sm:h-32 rounded-lg object-cover"/>
+      
+      <!-- Text -->
+      <div class="text-center sm:text-left">
+        <h1 class="text-lg sm:text-3xl font-bold">Faith Masara</h1>
+        <p class="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">
           I am a passionate and dedicated software developer with a strong foundation in html and css 
         </p>
       </div>
@@ -23,11 +30,10 @@
 
     <!-- PROFICIENCY & SKILLS -->
     <section class="grid md:grid-cols-2 gap-6">
-      <!-- PROFICIENCY -->
-      <div class="bg-teal-100 p-6 rounded-3xl shadow-lg">
+      <!-- Proficiency (white background) -->
+      <div class="bg-white p-6 rounded-3xl shadow-lg">
         <h2 class="text-xl font-semibold mb-4">Proficiency</h2>
         <div class="space-y-5">
-          <!-- Bar helper -->
           <div>
             <label class="font-semibold text-sm">JavaScript</label>
             <div class="w-full bg-gray-200 h-2 rounded-lg mt-1">
@@ -55,7 +61,7 @@
         </div>
       </div>
 
-      <!-- SKILLS -->
+      <!-- Skills -->
       <div class="bg-white p-6 rounded-3xl shadow-lg">
         <h2 class="text-xl font-semibold mb-4">Skills</h2>
         <div class="flex flex-wrap gap-3">
@@ -71,111 +77,91 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-        <!-- Card -->
-        <div class="bg-teal-100 p-6 rounded-3xl shadow-lg border-l-4 border-teal-700 relative">
-          <span class="absolute top-4 right-4 text-red-400 text-xl">♥</span>
-          <h3 class="text-lg font-semibold">2025 Portfolio Website</h3>
-          <p class="text-gray-600 mt-1 mb-2">Developed a personal portfolio website to showcase projects and skills.</p>
-          <p class="text-sm"><strong>Technologies:</strong> React, JavaScript, HTML, CSS</p>
-          <p class="text-sm"><strong>Responsibilities:</strong> Designed & implemented responsiveness and accessibility</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-3xl shadow-lg border-l-4 border-teal-200 relative">
-          <span class="absolute top-4 right-4 text-red-400 text-xl">♥</span>
-          <h3 class="text-lg font-semibold">2025 responsive footer </h3>
-          <p class="text-gray-600 mt-1 mb-2">Built a responsive footer.</p>
-          <p class="text-sm"><strong>Technologies:</strong> React, Tailwind, HTML, CSS</p>
-          <p class="text-sm"><strong>Responsibilities:</strong></p>
-        </div>
-
-        <div class="bg-white p-6 rounded-3xl shadow-lg border-l-4 border-teal-700 relative">
-          <span class="absolute top-4 right-4 text-red-400 text-xl">♥</span>
-          <h3 class="text-lg font-semibold">2025 Agile Board</h3>
-          <p class="text-gray-600 mt-1 mb-2">Created a task management board with real-time sync & auth.</p>
-          <p class="text-sm"><strong>Technologies:</strong> JavaScript, HTML, CSS</p>
-          <p class="text-sm"><strong>Responsibilities:</strong> Sync, UI, localStorage persistence</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-3xl shadow-lg border-l-4 border-gray-400 relative">
-          <span class="absolute top-4 right-4 text-red-400 text-xl">♥</span>
-          <h3 class="text-lg font-semibold">2026 Super Cool Project</h3>
-          <p class="text-gray-600 mt-1 mb-2">Developed a client-focused application with custom features.</p>
-          <p class="text-sm"><strong>Technologies:</strong> React, Tailwind, HTML, CSS</p>
-          <p class="text-sm"><strong>Responsibilities:</strong> Complex UI, responsive design, custom features</p>
-        </div>
-
-      </div>
-    </section>
-
     <!-- EDUCATION -->
-    <section class="bg-white p-6 rounded-3xl shadow-lg">
-      <h2 class="text-2xl font-semibold mb-4">Education</h2>
-      <div class="space-y-6">
-        <div>
-          <h4 class="font-semibold text-lg">CodeSpace Academy</h4>
-          <p class="text-gray-600 text-sm">may 2025 – nov.2025 | Software Development</p>
-          <ul class="list-disc pl-5 text-gray-700 text-sm">
+    <section class="w-full sm:w-3/5 mx-auto">
+      <h2 class="text-2xl font-semibold mb-4 text-center sm:text-left">Education</h2>
+      <div class="flex flex-col space-y-4 sm:space-y-6">
+
+        <!-- CodeSpace Academy Card -->
+        <div class="bg-[#2E6E5B] text-white p-4 rounded-2xl shadow-md w-full relative">
+          <div class="absolute top-2 right-2 bg-[#D9534F] text-white text-[12px] rounded-[8px] px-2 py-0.5">
+            Most Recent
+          </div>
+          <h4 class="font-semibold text-base sm:text-lg">CodeSpace Academy</h4>
+          <p class="text-xs sm:text-sm">May 2025 – Nov 2025 | Software Development</p>
+          <ul class="list-disc pl-5 text-xs sm:text-sm">
             <li>Focused on React and JavaScript for web apps</li>
-            <li>Collaborated on real multi person projects</li>
-            <li>Gained hands on web tech & dev tools experience</li>
+            <li>Collaborated on real multi-person projects</li>
+            <li>Gained hands-on web tech & dev tools experience</li>
           </ul>
         </div>
-        <div>
-          <h4 class="font-semibold text-lg">Chisipite Senior School</h4>
-          <p class="text-gray-600 text-sm">jan. 2023 – november 2024 | lower and upper 6</p>
-          <ul class="list-disc pl-5 text-gray-700 text-sm">
-            <li>acquired advanced level highschool Education certificate</li>
-            <li>learnt strong leadership skills </li>
-            <li>Collaborated on various critical thinking and problem solving projects</li>
+
+        <!-- Chisipite Upper 6 Card -->
+        <div class="bg-white p-4 rounded-2xl shadow-md w-full">
+          <h4 class="font-semibold text-base sm:text-lg">Chisipite Senior School</h4>
+          <p class="text-gray-600 text-xs sm:text-sm">Jan 2023 – Nov 2024 | Lower and Upper 6</p>
+          <ul class="list-disc pl-5 text-gray-700 text-xs sm:text-sm">
+            <li>Acquired advanced level high school education certificate</li>
+            <li>Learned strong leadership skills</li>
+            <li>Collaborated on critical thinking and problem-solving projects</li>
           </ul>
         </div>
-        <div>
-          <h4 class="font-semibold text-lg">Chisipite Senior School </h4>
-          <p class="text-gray-600 text-sm">Jan 2019 – nov. 2022 |  | O level</p>
-          <ul class="list-disc pl-5 text-gray-700 text-sm">
-            <li>acquired a cambridge O level certificate</li>
-            <li>Partook in school wide projects fostering creativity</li>
+
+        <!-- Chisipite O Level Card -->
+        <div class="bg-white p-4 rounded-2xl shadow-md w-full">
+          <h4 class="font-semibold text-base sm:text-lg">Chisipite Senior School</h4>
+          <p class="text-gray-600 text-xs sm:text-sm">Jan 2019 – Nov 2022 | O Level</p>
+          <ul class="list-disc pl-5 text-gray-700 text-xs sm:text-sm">
+            <li>Acquired a Cambridge O Level certificate</li>
+            <li>Participated in school-wide projects fostering creativity</li>
           </ul>
         </div>
+
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="bg-white p-6 rounded-3xl shadow-lg">
-      <h2 class="text-2xl font-semibold mb-4">Experience</h2>
-      <div class="space-y-6">
-        <div>
-          <h4 class="font-semibold text-lg">Bookstore Clerk</h4>
-          <p class="text-gray-600 text-sm">Aug 2023 – Jul 2024 | Readers’ Haven</p>
-          <ul class="list-disc pl-5 text-gray-700 text-sm">
+    <section class="w-full sm:w-3/5 mx-auto">
+      <h2 class="text-2xl font-semibold mb-4 text-center sm:text-left">Experience</h2>
+      <div class="flex flex-col space-y-4 sm:space-y-6">
+
+        <!-- Bookstore Clerk -->
+        <div class="bg-[#2E6E5B] text-white p-4 rounded-2xl shadow-md w-full relative">
+          <div class="absolute top-2 right-2 bg-[#D9534F] text-white text-[12px] rounded-[8px] px-2 py-0.5">
+            Most Recent
+          </div>
+          <h4 class="font-semibold text-base sm:text-lg">Bookstore Clerk</h4>
+          <p class="text-xs sm:text-sm">Aug 2023 – Jul 2024 | Readers’ Haven</p>
+          <ul class="list-disc pl-5 text-xs sm:text-sm">
             <li>Organized new arrivals & maintained store layout</li>
             <li>Assisted customers & updated inventory</li>
           </ul>
         </div>
-        <div>
-          <h4 class="font-semibold text-lg">Sales | Cell Contracts</h4>
-          <p class="text-gray-600 text-sm">nov 2024– march2025| personal assistant role</p>
-          <ul class="list-disc pl-5 text-gray-700 text-sm">
-            <li>setting up meetings and scheduling </li>
+
+        <!-- Sales -->
+        <div class="bg-white p-4 rounded-2xl shadow-md w-full">
+          <h4 class="font-semibold text-base sm:text-lg">Sales | Cell Contracts</h4>
+          <p class="text-gray-600 text-xs sm:text-sm">Nov 2024 – Mar 2025 | Personal Assistant Role</p>
+          <ul class="list-disc pl-5 text-gray-700 text-xs sm:text-sm">
+            <li>Setting up meetings and scheduling</li>
             <li>Maintained high satisfaction through escalated inquiry handling</li>
           </ul>
         </div>
-        <div>
-          <h4 class="font-semibold text-lg">Waiter</h4>
-          <p class="text-gray-600 text-sm">Feb 2021 – Dec 2022 |upstate resturent </p>
-          <ul class="list-disc pl-5 text-gray-700 text-sm">
+
+        <!-- Waiter -->
+        <div class="bg-white p-4 rounded-2xl shadow-md w-full">
+          <h4 class="font-semibold text-base sm:text-lg">Waiter</h4>
+          <p class="text-gray-600 text-xs sm:text-sm">Feb 2021 – Dec 2022 | Upstate Restaurant</p>
+          <ul class="list-disc pl-5 text-gray-700 text-xs sm:text-sm">
             <li>Provided attentive service & upsold menu items</li>
             <li>Worked closely with kitchen staff for timely delivery</li>
           </ul>
         </div>
+
       </div>
     </section>
 
+    <!-- TOOLS -->
     <section>
       <h2 class="text-2xl font-bold mb-4">Tools</h2>
       <div class="flex flex-wrap gap-4">
@@ -187,6 +173,7 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="w-8 h-8" />
       </div>
     </section>
+
     <!-- CONTACT FOOTER -->
     <footer class="bg-orange-600 text-white p-6 rounded-3xl text-center">
       <h3 class="text-lg font-semibold mb-2">Let’s chat! I’m ready to work on exciting projects.</h3>
@@ -196,8 +183,8 @@
         <a href="#" class="underline">GitHub</a>
       </div>
     </footer>
+
   </div>
 
 </body>
 </html>
-
